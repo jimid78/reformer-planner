@@ -10,18 +10,65 @@
     <div class="container">
         <h1>Reformer Pilates Class Planner</h1>
 
+        <!-- Target Area -->
         <div class="filter-group">
             <h3>Target Area</h3>
             <label><input type="checkbox" class="filter" value="Legs"> Legs</label><br>
             <label><input type="checkbox" class="filter" value="Core"> Core</label><br>
             <label><input type="checkbox" class="filter" value="Arms"> Arms</label><br>
+           <label><input type="checkbox" class="filter" value="Glutes"> Glutes</label><br>
+           <label><input type="checkbox" class="filter" value="Full Body"> Full Body</label><br>
+           <label><input type="checkbox" class="filter" value="Back"> Back</label><br>
         </div>
 
+        <!-- Muscle Groups -->
         <div class="filter-group">
             <h3>Muscle Groups</h3>
-            <label><input type="checkbox" class="filter" value="Glutes"> Glutes</label><br>
-            <label><input type="checkbox" class="filter" value="Abs"> Abs</label><br>
-            <label><input type="checkbox" class="filter" value="Chest"> Chest</label><br>
+            <label><input type="checkbox" class="filter" value="Hamstrings"> Hamstrings</label><br>
+            <label><input type="checkbox" class="filter" value="Quads"> Quads</label><br>
+            <label><input type="checkbox" class="filter" value="Lats"> Lats</label><br>
+          <label><input type="checkbox" class="filter" value="Obliques"> Obliques</label><br>
+          <label><input type="checkbox" class="filter" value="Abs"> Abs</label><br>
+          <label><input type="checkbox" class="filter" value="Shoulders"> Shoulders</label><br>
+        </div>
+
+        <!-- Body Position -->
+        <div class="filter-group">
+            <h3>Body Position</h3>
+            <label><input type="checkbox" class="filter" value="Prone"> Prone</label><br>
+          <label><input type="checkbox" class="filter" value="Supine"> Supine</label><br>
+            <label><input type="checkbox" class="filter" value="Seated"> Seated</label><br>
+            <label><input type="checkbox" class="filter" value="Standing"> Standing</label><br>
+          <label><input type="checkbox" class="filter" value="Kneeling"> Kneeling</label><br>
+          <label><input type="checkbox" class="filter" value="Side-Lying"> Side-Lying</label><br>
+        </div>
+
+        <!-- Movement Direction -->
+        <div class="filter-group">
+            <h3>Movement Direction</h3>
+            <label><input type="checkbox" class="filter" value="Flexion"> Flexion</label><br>
+            <label><input type="checkbox" class="filter" value="Extension"> Extension</label><br>
+            <label><input type="checkbox" class="filter" value="Rotation"> Rotation</label><br>
+          <label><input type="checkbox" class="filter" value="Lateral Flexion"> Lateral Flexion</label><br>
+        </div>
+
+        <!-- Props -->
+        <div class="filter-group">
+            <h3>Props</h3>
+            <label><input type="checkbox" class="filter" value="Box"> Box</label><br>
+            <label><input type="checkbox" class="filter" value="Ring"> Ring</label><br>
+            <label><input type="checkbox" class="filter" value="Straps"> Straps</label><br>
+          <label><input type="checkbox" class="filter" value="Ball"> Ball</label><br>
+          <label><input type="checkbox" class="filter" value="Pole"> Pole</label><br>
+          <label><input type="checkbox" class="filter" value="None"> None</label><br>
+        </div>
+
+        <!-- Class Level -->
+        <div class="filter-group">
+            <h3>Class Level</h3>
+            <label><input type="radio" name="level" class="level" value="Beginner" checked> Beginner</label><br>
+            <label><input type="radio" name="level" class="level" value="Intermediate"> Intermediate</label><br>
+            <label><input type="radio" name="level" class="level" value="Expert"> Expert</label><br>
         </div>
 
         <button onclick="generateClass()">Generate Class</button>
