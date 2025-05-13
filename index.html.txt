@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reformer Pilates Class Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reformer Pilates Class Planner</h1>
+
+        <div class="filter-group">
+            <h3>Target Area</h3>
+            <label><input type="checkbox" class="filter" value="Legs"> Legs</label><br>
+            <label><input type="checkbox" class="filter" value="Core"> Core</label><br>
+            <label><input type="checkbox" class="filter" value="Arms"> Arms</label><br>
+        </div>
+
+        <div class="filter-group">
+            <h3>Muscle Groups</h3>
+            <label><input type="checkbox" class="filter" value="Glutes"> Glutes</label><br>
+            <label><input type="checkbox" class="filter" value="Abs"> Abs</label><br>
+            <label><input type="checkbox" class="filter" value="Chest"> Chest</label><br>
+        </div>
+
+        <button onclick="generateClass()">Generate Class</button>
+        <button onclick="clearSelections()">Clear Selections</button>
+
+        <div id="selected-items">
+            <h3>Selected Filters:</h3>
+            <p id="selection-summary"></p>
+        </div>
+
+        <div id="exercise-list">
+            <h3>Recommended Exercises:</h3>
+            <ul id="exercise-summary"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
