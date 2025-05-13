@@ -1802,7 +1802,7 @@ function displayExercises(exercises) {
                                   Muscle Group: ${exercise.muscleGroup}<br>
                                   Difficulty: ${exercise.difficulty}<br>
                                   Spring Level: ${exercise.springLevel}<br>
-                                  <a href="${exercise.videoUrl}" target="_blank">Watch Video</a><br><br>`;
+                                  `;
             exerciseSummary.appendChild(listItem);
         });
     } else {
